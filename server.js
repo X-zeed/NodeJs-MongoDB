@@ -3,8 +3,9 @@ const mongoose = require('mongoose');
 
 const app = express();
 app.use(express.json());
-
-const mongoURL = 'mongodb://127.0.0.1:27017/crud';
+//mongodb+srv://Wachirawit_Tanleng:Bill.53162@cluster0.blmqluz.mongodb.net/mymongodb?retryWrites=true&w=majority&appName=Cluster0
+// const mongoURL = 'mongodb://127.0.0.1:27017/crud';
+const mongoURL = 'mongodb+srv://Wachirawit_tanleng:Bill.53162@cluster0.blmqluz.mongodb.net/mymongodb?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(mongoURL, {
     useNewUrlParser: true,
